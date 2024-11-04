@@ -1,0 +1,72 @@
+2024-11-04 12:52:04,803 INFO c.u.v.TradeService [main]   VWAP is    : 1.5666666666666667
+2024-11-04 12:52:04,923 INFO c.u.v.TradeService [main] Currency Pair: USD/EUR
+2024-11-04 12:52:04,929 INFO c.u.v.TradeService [main]   Hour during: 10 to 11
+2024-11-04 12:52:04,932 INFO c.u.v.TradeService [main]   VWAP is    : 1.5666666666666667
+2024-11-04 12:52:04,933 INFO c.u.v.TradeService [main] 
+2024-11-04 12:52:43,196 INFO c.u.v.VWAPCalculatorApplication [main] Starting VWAPCalculatorApplication using Java 17.0.2 with PID 9884 (C:\prk\ws\ij-ws\vwap\target\classes started by bujjipapa in C:\prk\ws\ij-ws\vwap)
+2024-11-04 12:52:43,211 INFO c.u.v.VWAPCalculatorApplication [main] The following 1 profile is active: "@env@"
+2024-11-04 12:52:44,645 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-04 12:52:44,728 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-11-04 12:52:45,640 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-11-04 12:52:45,656 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-04 12:52:45,661 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-11-04 12:52:45,662 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-04 12:52:45,749 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-11-04 12:52:45,752 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2447 ms
+2024-11-04 12:52:45,988 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-04 12:52:46,280 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-04 12:52:46,283 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-04 12:52:46,297 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-04 12:52:46,535 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-04 12:52:46,608 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-04 12:52:46,650 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-11-04 12:52:47,039 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-04 12:52:48,158 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-04 12:52:48,267 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-04 12:52:48,687 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-04 12:52:49,453 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-11-04 12:52:49,523 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-11-04 12:52:49,550 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 12:52:49,573 INFO c.u.v.VWAPCalculatorApplication [main] Started VWAPCalculatorApplication in 7.063 seconds (process running for 8.31)
+2024-11-04 12:54:35,445 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 12:54:35,445 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-11-04 12:54:35,448 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 3 ms
+2024-11-04 12:54:39,469 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 23505, SQLState: 23505
+2024-11-04 12:54:39,469 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] Unique index or primary key violation: "PUBLIC.UKFG7HJYUH126C5QJQS82IT5WTJ_INDEX_4 ON PUBLIC.TRADE(CURRENCY_PAIR NULLS FIRST, TIME_STAMP NULLS FIRST) VALUES ( /* key:1 */ 'AUD/USD', TIME '09:34:00')"; SQL statement:
+insert into trade (currency_pair,exchange_rate,time_stamp,volume,id) values (?,?,?,?,default) [23505-224]
+2024-11-04 12:54:40,912 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 23505, SQLState: 23505
+2024-11-04 12:54:40,912 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-5] Unique index or primary key violation: "PUBLIC.UKFG7HJYUH126C5QJQS82IT5WTJ_INDEX_4 ON PUBLIC.TRADE(CURRENCY_PAIR NULLS FIRST, TIME_STAMP NULLS FIRST) VALUES ( /* key:1 */ 'AUD/USD', TIME '09:34:00')"; SQL statement:
+insert into trade (currency_pair,exchange_rate,time_stamp,volume,id) values (?,?,?,?,default) [23505-224]
+2024-11-04 12:54:50,547 INFO c.u.v.TradeService [http-nio-8080-exec-8] Currency Pair: NZD/GBP
+2024-11-04 12:54:50,552 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 9 to 10
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.4737097428172133
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 10 to 11
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.4734611131752991
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 11 to 12
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.4777963389902871
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8] Currency Pair: USD/JPY
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 9 to 10
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 142.503423067235
+2024-11-04 12:54:50,553 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 10 to 11
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 142.50504498728108
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 11 to 12
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 142.5045437895438
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8] Currency Pair: AUD/USD
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 9 to 10
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.691347674012153
+2024-11-04 12:54:50,563 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 10 to 11
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.6956584532595372
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8]   Hour during: 11 to 12
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8]   VWAP is    : 0.6995488581127772
+2024-11-04 12:54:50,570 INFO c.u.v.TradeService [http-nio-8080-exec-8] 
+2024-11-04 12:55:01,203 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-04 12:55:01,207 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-04 12:55:01,212 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
